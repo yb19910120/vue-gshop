@@ -40,7 +40,10 @@ export default new VueRouter({
     },
     {
       path : '/',
-      component : MSite
+      component : MSite,
+      meta:{
+        showFooter:true
+      }
     },
     {
       path : '/login',

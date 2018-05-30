@@ -9,11 +9,15 @@
 
   import footers from './components/Footer/Footer'
 
-export default {
+
+  export default {
   name: 'App',
   components: {
    footers
-  }
+  },
+   mounted(){
+     this.$store.dispatch('getAddress')
+    }
 }
 </script>
 
